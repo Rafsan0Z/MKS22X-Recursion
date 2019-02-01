@@ -29,10 +29,10 @@ public static int fib(int n){
 }
 
 public static int fibH(int first, int last, int pos, int end){
-  if(pos <= 1){return 1;}
+  if(end <= 1){return 1;}
   int nfirst = first + last;
   int nlast = first;
-  return fibH(nfirst,nlast,pos+1,end);
+  return fibH(nfirst,nlast,pos,end-1);
 }
 
 public static ArrayList<Integer> makeAllSums(){
