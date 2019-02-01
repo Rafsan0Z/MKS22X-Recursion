@@ -56,6 +56,9 @@ public static void main(String[] args){
     double result = sqrt(num,tolerance);
     System.out.println("The square root of " + num + " is: " + result);
   }
+  else{
+    System.out.println(fib(5));
+  }
 }
 
 }
