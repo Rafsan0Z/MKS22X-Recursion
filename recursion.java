@@ -40,7 +40,7 @@ public static void main(String[] args){
     System.out.println("Input a number: ");
     double num = (double)in.nextInt();
     System.out.println("Input a tolerance: ");
-    double tolerance = (double)in.nextInt();
+    double tolerance = in.nextDouble();
     double result = sqrt(num,tolerance);
     System.out.println("The square root of " + num + " is: " + result);
   }
