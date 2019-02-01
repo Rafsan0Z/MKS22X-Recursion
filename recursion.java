@@ -25,11 +25,11 @@ public static double sqrtH(double n, double guess, double tolerance){
      */
 public static int fib(int n){
   if(n == 0){return 1;}
-  return fibH(n,0);
+  return fibH(0,0,0,n);
 }
 
-public static int fibH(int n, int m){
-  
+public static int fibH(int first, int last, int pos, int end){
+
 }
 
 public static ArrayList<Integer> makeAllSums(){
