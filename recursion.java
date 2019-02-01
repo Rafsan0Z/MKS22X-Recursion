@@ -57,7 +57,10 @@ public static void main(String[] args){
     System.out.println("The square root of " + num + " is: " + result);
   }
   else{
-    System.out.println(fib(100000));
+    System.out.println("Input a number: ");
+    int num = in.nextInt();
+    int result = fib(num);
+    System.out.println("The square root of " + num + " is: " + result);
   }
 }
 
