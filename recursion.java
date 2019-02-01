@@ -36,6 +36,10 @@ public static void main(String[] args){
   if(func.equals("sqrt")){
     System.out.println("Input a number: ");
     double num = (double)in.nextInt();
+    System.out.println("Input a tolerance: ");
+    double tolerance = (double)in.nextInt();
+    double result = sqrt(num,tolerance);
+    System.out.println("The square root of " + num + " is: " + result);
   }
 }
 
