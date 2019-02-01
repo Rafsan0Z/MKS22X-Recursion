@@ -28,6 +28,9 @@ public static ArrayList<Integer> makeAllSums(){
 public static void main(String[] args){
   Scanner in = new Scanner(System.in);
   System.out.println("Here are all the functions: ");
+  System.out.println("1) sqrt for finding square root of a number")
+  System.out.println("2) fib for finding the fibinachi number at an index")
+  System.out.println("3) makeAllSums for finding all posible combination of sums")
 }
 
 }
