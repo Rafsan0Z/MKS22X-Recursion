@@ -25,11 +25,11 @@ public static double sqrtH(double n, double guess, double tolerance){
      */
 public static int fib(int n){
   if(n == 0){return 1;}
-  return fibH(0,0,0,n);
+  return fibH(1,1,0,n);
 }
 
 public static int fibH(int first, int last, int pos, int end){
-  if(end <= 1){return 1;}
+  if(end <= 1){return first;}
   int nfirst = first + last;
   int nlast = first;
   return fibH(nfirst,nlast,pos,end-1);
@@ -57,7 +57,7 @@ public static void main(String[] args){
     System.out.println("The square root of " + num + " is: " + result);
   }
   else{
-    System.out.println(fib(5));
+    System.out.println(fib(7));
   }
 }
 
