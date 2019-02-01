@@ -20,11 +20,12 @@ public static double sqrtH(double n, double guess, double tolerance){
 }
 
 public static int fib(int n){
-
+  return 0;
 }
 
 public static ArrayList<Integer> makeAllSums(){
-
+  ArrayList<Integer> result = new ArrayList<Integer>();
+  return result;
 }
 
 public static void main(String[] args){
