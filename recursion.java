@@ -6,10 +6,11 @@ public class recursion{
 
       */
 public static double sqrt(double n, double tolerance){
-
+  if(n == 0.0){return n;}
 }
 
-public static double sqrtH(double n, double guess){
+public static double sqrtH(double n, double guess, double tolerance){
+  double num = guess * guess;
 
 }
 
