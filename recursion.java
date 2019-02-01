@@ -24,7 +24,8 @@ public static double sqrtH(double n, double guess, double tolerance){
      *precondition: n is non-negative
      */
 public static int fib(int n){
-  return 0;
+  if(n == 0){return 1;}
+  return fibH(n,0);
 }
 
 public static ArrayList<Integer> makeAllSums(){
