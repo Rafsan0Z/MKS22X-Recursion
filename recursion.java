@@ -42,9 +42,9 @@ public static ArrayList<Integer> makeAllSums(int nums){
   return makeAllSumsH(nums-1,result);
 }
 
-public static ArrayList<Intege> makeAllSumsH(int nums, ArrayList<Integer> data){
-  if(num == 0){return data;}
-  for(num: data){
+public static ArrayList<Integer> makeAllSumsH(int nums, ArrayList<Integer> data){
+  if(nums == 0){return data;}
+  for(int num: data){
     if(!data.contains(num+nums)){data.add(num+nums);}
   }
   return makeAllSumsH(nums-1,data);
