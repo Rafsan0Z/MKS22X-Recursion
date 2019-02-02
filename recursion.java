@@ -42,6 +42,14 @@ public static ArrayList<Integer> makeAllSums(int nums){
   return makeAllSumsH(nums-1,result);
 }
 
+public static ArrayList<Intege> makeAllSumsH(int nums, ArrayList<Integer> data){
+  if(num == 0){return data;}
+  for(num: data){
+    if(!data.contains(num+nums)){data.add(num+nums);}
+  }
+  return makeAllSumsH(nums-1,data);
+}
+
 public static void main(String[] args){
   Scanner in = new Scanner(System.in);
   System.out.println("Here are all the functions: ");
