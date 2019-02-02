@@ -35,9 +35,11 @@ public static int fibH(int first, int last, int pos, int end){
   return fibH(nfirst,nlast,pos,end-1);
 }
 
-public static ArrayList<Integer> makeAllSums(){
+public static ArrayList<Integer> makeAllSums(int nums){
   ArrayList<Integer> result = new ArrayList<Integer>();
-  return result;
+  result.add(0);
+  result.add(nums);
+  return makeAllSumsH(nums-1,result);
 }
 
 public static void main(String[] args){
