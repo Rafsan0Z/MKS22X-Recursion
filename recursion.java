@@ -66,12 +66,15 @@ public static void main(String[] args){
     double result = sqrt(num,tolerance);
     System.out.println("The square root of " + num + " is: " + result);
   }
-  else{
+  else if(func.equals("fib")){
     System.out.println("Input a number: ");
     int num = in.nextInt();
     int result = fib(num);
     System.out.println("The square root of " + num + " is: " + result);
   }
+  else(
+    System.out.println(makeAllSums(3));
+  )
 }
 
 }
