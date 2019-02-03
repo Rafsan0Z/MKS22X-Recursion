@@ -75,12 +75,16 @@ public static void main(String[] args){
     int result = fib(num);
     System.out.println("The fibinachi number at postion " + num + " is: " + result);
   }
-  else{
+  else if(func.equals("makeAllSums")){
     System.out.println("Input a number: ");
     int num = in.nextInt();
     ArrayList<Integer> result = makeAllSums(num);
     System.out.println("Here is all possible sums: " + result);
   }
+  else{
+    System.out.println("Invalid Input!");
+  }
+  in.close();
 }
 
 }
