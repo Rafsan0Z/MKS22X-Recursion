@@ -60,6 +60,8 @@ public static void main(String[] args){
   System.out.println("2) fib for finding the fibinachi number at an index");
   System.out.println("3) makeAllSums for finding all posible combination of sums");
   System.out.println("Input a valid function name: ");
+  boolean run = true;
+  while(run){
   String func = in.nextLine();
   if(func.equals("sqrt")){
     System.out.println("Input a number: ");
@@ -68,23 +70,27 @@ public static void main(String[] args){
     double tolerance = in.nextDouble();
     double result = sqrt(num,tolerance);
     System.out.println("The square root of " + num + " is: " + result);
+    run = false;
   }
   else if(func.equals("fib")){
     System.out.println("Input a number: ");
     int num = in.nextInt();
     int result = fib(num);
     System.out.println("The fibinachi number at postion " + num + " is: " + result);
+    run = false;
   }
   else if(func.equals("makeAllSums")){
     System.out.println("Input a number: ");
     int num = in.nextInt();
     ArrayList<Integer> result = makeAllSums(num);
     System.out.println("Here is all possible sums: " + result);
+    run = false;
   }
+  else if(func.equals("x")){run = false;}
   else{
-    System.out.println("Invalid Input!");
+    System.out.println("Invalid Input! Try Again or Enter 'x' to exit!");
   }
+}
   in.close();
 }
-
 }
