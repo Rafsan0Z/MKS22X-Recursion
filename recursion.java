@@ -73,10 +73,13 @@ public static void main(String[] args){
     System.out.println("Input a number: ");
     int num = in.nextInt();
     int result = fib(num);
-    System.out.println("The square root of " + num + " is: " + result);
+    System.out.println("The fibinachi number at postion " + num + " is: " + result);
   }
   else{
-    System.out.println(makeAllSums(3));
+    System.out.println("Input a number: ");
+    int num = in.nextInt();
+    ArrayList<Integer> result = makeAllSums(num);
+    System.out.println("Here is all possible sums: " + result);
   }
 }
 
