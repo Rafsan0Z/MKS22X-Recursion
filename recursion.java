@@ -44,8 +44,11 @@ public static ArrayList<Integer> makeAllSums(int nums){
 
 public static ArrayList<Integer> makeAllSumsH(int nums, ArrayList<Integer> data){
   if(nums == 0){return data;}
-  for(int num: data){
+  int length = data.size();
+  while(length > 0){
+    int num = data.get(length-1);
     if(!data.contains(num+nums)){data.add(num+nums);}
+    length--;
   }
   return makeAllSumsH(nums-1,data);
 }
@@ -72,9 +75,9 @@ public static void main(String[] args){
     int result = fib(num);
     System.out.println("The square root of " + num + " is: " + result);
   }
-  else(
+  else{
     System.out.println(makeAllSums(3));
-  )
+  }
 }
 
 }
