@@ -63,6 +63,7 @@ public static void main(String[] args){
   boolean run = true;
   while(run){
   String func = in.nextLine();
+  func = func.toLowerCase();
   if(func.equals("sqrt")){
     System.out.println("Input a number: ");
     double num = (double)in.nextInt();
@@ -79,7 +80,7 @@ public static void main(String[] args){
     System.out.println("The fibinachi number at postion " + num + " is: " + result);
     run = false;
   }
-  else if(func.equals("makeAllSums")){
+  else if(func.equals("makeallsums")){
     System.out.println("Input a number: ");
     int num = in.nextInt();
     ArrayList<Integer> result = makeAllSums(num);
