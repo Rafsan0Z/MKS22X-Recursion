@@ -55,6 +55,7 @@ public static ArrayList<Integer> makeAllSumsH(int nums, ArrayList<Integer> data)
 
 public static void main(String[] args){
   Scanner in = new Scanner(System.in);
+  System.out.println("If you wish to test using another file then press &");
   System.out.println("Here are all the functions: ");
   System.out.println("1) sqrt for finding square root of a number");
   System.out.println("2) fib for finding the fibinachi number at an index");
@@ -72,6 +73,9 @@ public static void main(String[] args){
     double result = sqrt(num,tolerance);
     System.out.println("The square root of " + num + " is: " + result);
     run = false;
+  }
+  else if(func.equals("&")){
+    
   }
   else if(func.equals("fib")){
     System.out.println("Input a number: ");
