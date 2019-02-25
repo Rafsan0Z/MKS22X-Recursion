@@ -75,7 +75,8 @@ public static void main(String[] args){
     run = false;
   }
   else if(func.equals("&")){
-    
+    System.out.println("Make sure that the file is inside the directory!");
+    System.out.println("_______________________________");
   }
   else if(func.equals("fib")){
     System.out.println("Input a number: ");
