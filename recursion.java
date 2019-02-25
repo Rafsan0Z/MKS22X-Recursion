@@ -79,6 +79,13 @@ public static void main(String[] args){
     System.out.println("_______________________________");
     System.out.println("Please input the path from the file explorer");
     String path = in.nextLine();
+    File file = new File(path);
+    if(file.exists()){
+      System.out.println("Thank you!")
+    }
+    else{
+      System.out.println("Sorry, the path is incorrect or the file does not exist!");
+    }
   }
   else if(func.equals("fib")){
     System.out.println("Input a number: ");
