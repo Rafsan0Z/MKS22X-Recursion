@@ -100,6 +100,15 @@ public static void main(String[] args){
     File file = new File(path);
     if(file.exists()){
       System.out.println("Thank you!");
+      try {
+            runProcess("pwd");
+            System.out.println("**********");
+            runProcess("javac OfficialTest.javac");
+            System.out.println("**********");
+            runProcess("java OfficialTest");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
     else{
       System.out.println("Sorry, the path is incorrect or the file does not exist!");
