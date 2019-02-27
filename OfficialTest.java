@@ -71,4 +71,7 @@ public static void testSqrt(int testcase){
     }
   }
 }
+public static void main(String[] args){
+  testSqrt(4);
+}
 }
