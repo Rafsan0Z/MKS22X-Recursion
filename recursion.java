@@ -103,7 +103,7 @@ public static void main(String[] args){
       try {
             runProcess("pwd");
             System.out.println("**********");
-            runProcess("javac OfficialTest.javac");
+            runProcess("javac OfficialTest.java");
             System.out.println("**********");
             runProcess("java OfficialTest");
         } catch (Exception e) {
