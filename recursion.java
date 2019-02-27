@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.io.*;
 public class recursion{
 
   /*Recursively find the sqrt using Newton's approximation
@@ -98,7 +99,7 @@ public static void main(String[] args){
     String path = in.nextLine();
     File file = new File(path);
     if(file.exists()){
-      System.out.println("Thank you!")
+      System.out.println("Thank you!");
     }
     else{
       System.out.println("Sorry, the path is incorrect or the file does not exist!");
