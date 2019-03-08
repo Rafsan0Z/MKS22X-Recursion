@@ -9,13 +9,14 @@ public class recursion{
 
       */
 public static double sqrt(double n, double tolerance){
+  if(n < 0.0){throw new IllegalArgumentException();}
   if(n == 0.0){return n;}
-  return sqrtH(n,1.0,tolerance);
+  return sqrtH(n,n/2.0,tolerance);
 }
 
 public static double sqrtH(double n, double guess, double tolerance){
   double num = guess * guess;
-  if(Math.abs((n/num) - 1) < tolerance){return guess;}
+  if(Math.abs((num - n)/n) < tolerance){return guess;}
   guess = ((n/guess) + guess) / 2.0;
   return sqrtH(n,guess,tolerance);
 }
