@@ -47,7 +47,8 @@ public static ArrayList<Integer> makeAllSums(int nums){
 public static ArrayList<Integer> makeAllSumsH(int nums, ArrayList<Integer> data){
   if(nums == 0){return data;}
   int length = data.size();
-  while(length > 0){
+  counter = 0
+  while(counter < length){
     int num = data.get(length-1);
     if(!data.contains(num+nums)){data.add(num+nums);}
     length--;
