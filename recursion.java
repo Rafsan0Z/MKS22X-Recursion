@@ -56,6 +56,17 @@ public static ArrayList<Integer> makeAllSumsH(int nums, ArrayList<Integer> data)
   return makeAllSumsH(nums-1,data);
 }
 
+public static String printArray(int[] ary) {
+ String result = "[";
+ for (int i = 0; i < ary.length ; i++) {
+  result += " " + ary[i];
+  if (i != ary.length - 1) {
+    result += ",";
+  }
+}
+ return result + "]";
+}
+
 public static void main(String[] args){
   int[] data = makeAllSums(3);
   System.out.println(data);
