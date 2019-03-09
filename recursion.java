@@ -69,7 +69,7 @@ public static String printArray(int[] ary) {
 
 public static void main(String[] args){
   ArrayList<Integer> data = makeAllSums(1);
-  int num = fib(10);
+  int num = fib(7);
   System.out.println(num);
   System.out.println(data);
 }
