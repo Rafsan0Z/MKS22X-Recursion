@@ -55,4 +55,9 @@ public static ArrayList<Integer> makeAllSumsH(int nums, ArrayList<Integer> data)
   }
   return makeAllSumsH(nums-1,data);
 }
+
+public static void main(String[] args){
+  int[] data = makeAllSums(3);
+  System.out.println(data);
+}
 }
