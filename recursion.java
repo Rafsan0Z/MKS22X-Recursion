@@ -31,10 +31,10 @@ public static int fib(int n){
 }
 
 public static int fibH(int first, int last, int pos, int end){
-  if(end <= 1){return first;}
+  if(end == pos){return last;}
   int nfirst = first + last;
   int nlast = first;
-  return fibH(nfirst,nlast,pos,end-1);
+  return fibH(nfirst,nlast,pos+1,end);
 }
 
 public static ArrayList<Integer> makeAllSums(int nums){
@@ -69,6 +69,8 @@ public static String printArray(int[] ary) {
 
 public static void main(String[] args){
   ArrayList<Integer> data = makeAllSums(1);
+  int num = fib(10);
+  System.out.println(num);
   System.out.println(data);
 }
 }
