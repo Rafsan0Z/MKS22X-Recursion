@@ -68,7 +68,7 @@ public static String printArray(int[] ary) {
 }
 
 public static void main(String[] args){
-  ArrayList<Integer> data = makeAllSums(3);
+  ArrayList<Integer> data = makeAllSums(10);
   System.out.println(data);
 }
 }
