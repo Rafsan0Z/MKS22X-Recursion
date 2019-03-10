@@ -26,12 +26,12 @@ public static double sqrtH(double n, double guess, double tolerance){
      *precondition: n is non-negative
      */
 public static int fib(int n){
-  if(n == 0){return 1;}
-  return fibH(1,1,0,n);
+  if(n == 0){return 0;}
+  return fibH(0,1,0,n);
 }
 
 public static int fibH(int first, int last, int pos, int end){
-  if(end == pos){return last;}
+  if(end == pos){return first;}
   int nfirst = first + last;
   int nlast = first;
   return fibH(nfirst,nlast,pos+1,end);
@@ -147,6 +147,8 @@ public static void main(String[] args){
   for(int i = 0; i < 5; i++){
   testFib(i);
 }
-  testSqrt(4);
+for(int j = 0; j < 4; j++){
+  testSqrt(j);
+}
 }
 }
